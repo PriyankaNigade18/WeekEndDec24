@@ -1,0 +1,41 @@
+
+29-12-2024
+==================
+Variables
+============
+1.Local variable
+------------------
+Any variable declare inside a method called Local variable
+
+Scope: Within Method
+Memory Allocate: At the time of method execution
+Memory deallocation: After method execution
+
+2.Instance Variable
+---------------------------
+Any variable declare inside class and outside any method/block/constuctor
+without static keyword is called instance variable
+
+Scope: Within Object
+Memory Allocate: At the time of creation of object
+Memory deallocation: After object execution /object destroyed
+
+for every new object new memory will be created.
+
+
+3.Static Variables
+------------------------
+Any variable declare inside class and outside any method/block/constuctor
+with static keyword is called static variable
+
+anything which is common for all the objects that you can declare as static
+
+Scope: Within class
+Memory Allocate: At the time of class loading
+Memory deallocation: After class unload 
+
+for every new object same memory will be shared.
+to call static data we don't need any object
+
+Static keyword help for memory management
+
