@@ -1,5 +1,7 @@
 package com.Week1;
 
+import com.Week2.MethodDemo;
+
 public class FirstCode 
 {
 	
@@ -11,7 +13,7 @@ public class FirstCode
 		
 	System.out.println("Hello All!");	
 		
-		
+		MethodDemo.display();
 		
 		
 	}

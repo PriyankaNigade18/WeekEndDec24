@@ -37,5 +37,27 @@ Memory deallocation: After class unload
 for every new object same memory will be shared.
 to call static data we don't need any object
 
+static keyword
+=====================
 Static keyword help for memory management
+1.static variable
+2.static block
+---------------
+static block is used to initialize static variable
+static block get the first priority
+
+3.static method
+--------------------
+
+
+
+
+
+
+
+
+
+
+
+
 
