@@ -10,8 +10,33 @@ public class Calculator
 		System.out.println("Addition is: "+result);
 	}
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+	
+	public void sub()
+	{
+		int result=num1-num2;
+		System.out.println("Subtraction is: "+result);
+	}
+	
+	
+	public void mul()
+	{
+		int result=num1*num2;
+		System.out.println("Multiplication is: "+result);
+	}
+	
+	public void div()
+	{
+		int result=num1/num2;
+		System.out.println("Division is: "+result);
+	}
+	public static void main(String[] args)
+	{
+
+		Calculator c1=new Calculator();
+		c1.add();
+		c1.sub();
+		c1.mul();
+		c1.div();
 
 	}
 
