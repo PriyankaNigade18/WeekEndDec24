@@ -5,3 +5,10 @@ Assignment1:
 ================
 Create an Employee class with two variable empname and empid 
 and display 5 employee details
+
+
+Assignment2:
+=====================
+1.Accept number from user and test is it positive or negative
+2.Accept two number from user and test greater number
+3.Accept three numbers from user and test greater number
