@@ -12,3 +12,20 @@ Assignment2:
 1.Accept number from user and test is it positive or negative
 2.Accept two number from user and test greater number
 3.Accept three numbers from user and test greater number
+
+
+
+Assignments:
+====================
+1.transaction[]={10,-20,30,40,-15};
+Print for positive elements credit
+Print for negative elements debit
+Calculate total amount:
+
+2.declare array of string and calculate number of strings
+
+3.declare string and calculate total number of characters and words
+String s1="Hello All"
+characters: 9
+words: 2
+
