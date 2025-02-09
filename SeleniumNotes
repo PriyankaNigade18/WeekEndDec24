@@ -1,0 +1,191 @@
+
+Selenium WebDriver
+===========================
+Selenium WebDriver is an interface
+WebDriver is an API for WebUi automation Testing
+=============================================================
+WebDriver setup on Java Project
+---------------------------------
+1.craete new Java project
+2.Download selenium java JAR file: selenium.dev
+3.Right click on project--->Build path--->Configure build path
+--->Library--->Class path--->Add external Jar-->Selenium JAR
+=================================================
+WebDriver into Maven Project
+==================================
+Maven is build and Project management tool
+
+Maven pom.xml
+====================
+Pom stands for Project Object Model
+This is project configuration file
+add require dependencies
+
+dependecy is a library(executable file)
+
+POM.xml Structure
+===================
+<project>
+
+<dependecies>
+
+<dependency>Selenium_Java</dependency>
+
+</dependecies>
+<build>
+
+<plugins>
+</plugins>
+
+</build>
+
+</project>
+
+==========================================
+Maven support two repositories
+================================
+1.Local Repo
+------------------------
+c/users/.m2 folder
+
+2.Central/Remote repo
+---------------------------
+mvnrepository.com
+
+Selenium Commands
+============================
+1.Browser commands
+==========================
+1.get(url): open application 
+2.getTitle(): get the title of application
+3.getCurrentUrl(): get the current url of application
+4.getPageSource(): get the page source
+multiple window Handling
+------------------------
+5.getWindowHandle(): get the parent/active window Id
+6.getWindowHandles(): get the all Windows Id
+7.close():close current active window
+8.quit(): close all open windows by selenium
+
+========================================
+2.Navigation Commands
+==========================
+Selenium Provides Navigation Interface
+
+1.to(url): to navigate any other application
+--------------------
+driver.navigate().to(url)
+
+2.back()
+--------------
+driver.navigate().back()
+
+3.forward()
+----------------
+driver.navigate().forward()
+
+4.refresh()
+------------------
+driver.navigate().refresh()
+
+
+What is WebElement in Selenium?
+===============================
+Any GUI element is refer as WebElement and Technically
+WebElement is Interface in Selenium
+
+How to Automate any WebElement?
+==================================
+1.get the address of WebElement
+2.using selenium perform actions on WebElement
+
+How Selenium Identify any WebElement?
+=========================================
+Selenium Identify WebElement using Locators
+
+What is Locator?
+====================
+Locator is address of WebElement from that Webpage
+
+Selenium Support total 8 Locators
+=================================
+1.By id (primary)
+2.By name
+3.By className
+4.By linkText
+5.By partailLinkText
+6.By tagName
+Dynamic
+---------------
+7.By cssSelector
+8.By Xpath
+
+Seleium 4 support Relative locators
+=====================================
+
+
+What is By?
+==============
+By is Class in Selenium
+
+Using locators you will get the address of element
+To identify by selenium we use method
+
+1.findElment()
+===================
+- Single element identify
+- return type of this method is WebElement interface object
+- If element not found then it return NoSuchElementException
+
+
+2.findEelements()
+=======================
+- Multiple similar elements identification
+- return type of this method is List<Webelement>
+- If element not found it returns [] list not exception
+
+===========================================================
+Locators
+===============
+1.By id
+
+
+WebElement Methods
+===================
+1.validation methods
+-----------------------
+1.isEnabled()
+2.isDisplayed()
+3.isSelected()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
