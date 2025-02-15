@@ -150,6 +150,52 @@ Locators
 1.By id
 
 
+
+
+
+By className
+=====================
+<input type="submit" value="Login" class="btn btn-primary">
+
+class="btn    btn-primary"
+	  class1     class2
+	  
+	  //InvalidSelectorException: Compound class names not permitted
+
+class="btn btn-default btn-primary"
+		c1      c2        c3
+
+How to Automate Any HyperLink
+==========================================
+
+<a id="SignIn" href="login.html">Sign In</a>
+                              <a>Link Text</a>
+
+1. By linkText(Full text)
+=============================
+driver.findElement(By.linkText("Sign In")).click();
+
+
+2. By partialLinkText(partial Text)
+=========================================
+driver.findElement(By.partialLinkText("In")).click();
+
+
+
+===================================
+By tagName
+==================
+Number of input boxes
+
+Number of Imges 
+
+Number of links
+
+Number of button
+
+finding number of elements we have to use findElements()
+
+===============================================================
 WebElement Methods
 ===================
 1.validation methods
@@ -157,6 +203,95 @@ WebElement Methods
 1.isEnabled()
 2.isDisplayed()
 3.isSelected()
+
+2.Special commands
+===================
+1.getText()
+============
+- this command help you to get visible text from application
+- any html inner text also we are able to get using getText()
+
+2.getAttribute() is deprecated--->4.27 getDomAttribute() and getDomProperty()
+================================================================
+- this commands help you to get any attribute or property value of any element
+
+=======================================
+DynamiC Locators
+====================
+1. By cssSelector
+==================
+
+what is Css?
+===================
+It is cascaded style sheet ,language which used to design and provide styles to webelement
+
+
+What is cssSelector
+========================
+-It is locator used to automate element by using css property
+-CssSelector is travel only form parent element to child element
+- Backward travel is not supported,CssSelector is faster than Xpath because of this nature
+-CssSelector doesn't support any method
+
+Css patterns
+====================
+1.tagName with id
+--------------------
+Syntax:
+============
+tagname#id
+
+<input id="input-email" class="form-control">
+
+input#input-email
+
+#input-email
+
+
+2.tagName with attribute
+-------------------------------
+Syntax:
+============
+tagname[attribute='value']
+<input type="password"  value="" placeholder="Password" >
+
+input[placeholder='Password']
+
+3.tagName with className
+------------------------------
+Syntax:
+============
+tagname.classname
+
+<input type="submit" value="Login" class="btn btn-primary">
+
+input.btn.btn-primary
+
+
+
+4.tagName with id,className and attribute
+-----------------------------------------------
+syntax:
+============
+tagname#id.classname[attribute='value']
+
+<input type="submit" value="Login" class="btn btn-primary">
+
+input.btn.btn-primary[value='Login']
+
+
+
+
+
+
+
+
+
+
+
+
+2.By xpath
+========================
 
 
 

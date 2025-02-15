@@ -20,7 +20,7 @@ public class HowToIdentifyWebElement {
 		//technique2: Identification+action
 		//driver.findElement(By.id("APjFqb")).sendKeys("Java",Keys.ENTER);
 		
-		//technique2: Identification+validate+action
+		//technique2: Identification+validate+action+action
 		WebElement searchEle=driver.findElement(By.id("APjFqb"));
 		
 		if(searchEle.isDisplayed() && searchEle.isEnabled())
