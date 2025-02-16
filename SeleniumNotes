@@ -165,6 +165,11 @@ class="btn    btn-primary"
 class="btn btn-default btn-primary"
 		c1      c2        c3
 
+
+class="oxd-button oxd-button--medium oxd-button--main orangehrm-login-button"
+			c1		c2					c3				c4
+=====================================================================
+
 How to Automate Any HyperLink
 ==========================================
 
@@ -214,6 +219,35 @@ WebElement Methods
 2.getAttribute() is deprecated--->4.27 getDomAttribute() and getDomProperty()
 ================================================================
 - this commands help you to get any attribute or property value of any element
+
+
+
+===============================================================
+Synchronization Issue in Selenium
+======================================
+Time mapping problem in between application and tool is called Synchronization issue
+
+Selenium Provides Dynamic Wait to handle this issue
+------------------------------------------
+1.Implicit Wait
+-================
+- It global wait 
+- applicable to complete script/element
+- add wait after initilization of driver
+
+driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+
+------------------------------------------------------
+2.Explicit Wait
+========================
+- It is applicable for single WebElement
+- It is based on certain condition we are able to apply wait
+
+1.WebDriverWait class
+2.FluentWait class
+
+WebDriverWait(c) extends FluentWait(c) implements Wait(I)
+===========================================================
 
 =======================================
 DynamiC Locators
@@ -278,6 +312,172 @@ tagname#id.classname[attribute='value']
 <input type="submit" value="Login" class="btn btn-primary">
 
 input.btn.btn-primary[value='Login']
+
+====================================================
+8.By xpath
+==============
+-xpath is path of the element from xml/html document
+-xpath identify elements directly from DOM(Document Object Model)
+==================================================================
+----------HTML DOM------------------------
+<html>----------------------root element
+<head>
+
+</head>
+<body>
+
+<input>
+<div>------------------UI element
+<a>
+<button>
+
+</body>
+</html>
+==================================================
+Types Of Xpath
+=================
+1.Absolute Xpath(Full xpath)
+=============================
+- Absolute xpath start identification from root element
+- Absolute xpath start with '/'
+
+/html/body/div[2]/div/div/div/div[2]/div/form/div[1]/input
+
+2.Relative Xpath(partial Xpath)
+================================
+- Relative xpath identify element from its relative property
+- Relative xpath starts with '//'
+
+//*[@id="input-email"]
+
+* any tag/All tag
+=================================
+Syntax:
+=====================
+//tagname[@attribute='value']
+
+====================================================================
+Xpath with Operator
+====================
+1. and
+================
+syntax
+==========
+//tagname[@attribute1='value' and @attribute2='value']
+
+2. or
+=================
+syntax
+==========
+//tagname[@attribute1='value' or @attribute2='value']
+--------------------------------------------------------------------
+xpath with index and position()
+==============================
+Syntax:
+================
+(xpath)[index]
+
+or
+(xpath)[position()=index]
+xpath Methods
+======================
+1.text()
+===============
+- to identify element with visible text  use text()
+- text() never ignore white space
+
+Syntax
+=========
+//tagname[text()='text']
+--------------------------------------------
+
+2.normalize-space()
+=====================
+- to identify element with visible text  use normalize-space()
+- normalize-space() ignore white space
+Syntax:
+=============
+//tagname[normalize-space()='text']
+
+3.contains(): partial match
+================================
+id="twotabsearchtextbox"
+
+Syntax:
+===========
+//tagname[contains(@attribute,'partial value')]
+
+or
+
+//tagname[contains(text(),'partial text')]
+
+-------------------------------------------------
+4.startsWith():prefix value
+
+Syntax:
+==============
+//tagname[starts-with(@attribute,'prefix value')]
+
+========================================================
+xpath Axies
+==================
+
+
+Relative locators
+=======================
+
+
+
+
+dropdown
+
+calendar
+
+svg elements
+
+Multiple windows
+
+Alerts
+
+frames
+
+WebTable
+
+Frameworks
+
+
+Actions class
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
