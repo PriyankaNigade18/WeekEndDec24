@@ -421,19 +421,101 @@ Syntax:
 ========================================================
 xpath Axies
 ==================
+1.Ancestor
+Syntax:
+=========
+//tagname[@attribute1='value']//ancestor::tagname of ancestor
+
+2.Parent
+Syntax:
+=========
+//tagname[@attribute1='value']//parent::tagname of parent
+
+3.Child
+Syntax:
+=========
+//tagname[@attribute1='value']//child::tagname of child
+
+4.Following
+Syntax:
+=========
+//tagname[@attribute1='value']//following::tagname of follwing element
+
+5.Following-sibling
+Syntax:
+==============
+//tagname[@attribute1='value']//following-sibling::tagname of follwing element
 
 
+6.Preceding
+Syntax:
+==============
+//tagname[@attribute1='value']//preceding::tagname of preceding element
+
+
+7.Preceding-sibling
+Syntax:
+==============
+//tagname[@attribute1='value']//preceding-sibling::tagname of preceding element
+
+<tbody>--------------ancestor
+<tr>----------------Parent
+ 
+         <td>4</td>     preceding-sibling
+
+          <td>John</td>---------------Element
+
+          <td>Robinson</td>
+							following-sibling
+          <td>jr5527</td>
+ 
+         <td>
+              <a href="user.html"><i class="icon-pencil"></i></a>
+              <a role="button" href="#myModal" data-toggle="modal"><i class="icon-remove"></i></a>
+          </td>
+
+        </tr>
+        
+        </tbody>
+================================================================
 Relative locators
 =======================
+toLeftOf()
+toRightOf()
+near()
+above()
+below()
+=======================================================================
+
+Dropdown Automation
+========================
+1.How to automate dropdown which is based on <Select>
+=========================================
+Selenium support Select class
+Select s1=new Select(dropdown address);
+
+Is dropdown support multiple selection-isMultiple()
+
+Single Selection
+==================
+1.selectByVisileText("")
+2.selectByIndex(index)
+3.selectByValue("")
+
+How to get all options
+=======================
+getOptions()
+
+2.How to automate AutoSuggestion/Javascript/Bootstrap
+==========================================
+
+
+3.How to automate any dissapper elements
 
 
 
-
-dropdown
-
+========================================================
 calendar
-
-svg elements
 
 Multiple windows
 
@@ -443,6 +525,11 @@ frames
 
 WebTable
 
+Actions
+
+JavaScriptExecutor
+
+svg elements
 Frameworks
 
 
