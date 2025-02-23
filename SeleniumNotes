@@ -508,17 +508,31 @@ getOptions()
 
 2.How to automate AutoSuggestion/Javascript/Bootstrap
 ==========================================
+xpath
 
+=========================================================
+3.How to automate any disappear elements
 
-3.How to automate any dissapper elements
-
-
+open devtool--->Event listener-->delete blur property
 
 ========================================================
 calendar
-
+===================
+done
+===========================================================
 Multiple windows
+======================
+how to automate multiple windows in selenium
+-getWindowHandle():String - get the active window handle
+-getWeindowHandles():Set<String> - get all windows session id
+-switchTo():switch to target(window/alert/frame)
 
+How to open new Window/new tab
+==============================
+slenium 4
+WebDriver driver=driver.switchTo().newWindow(WinDowType.TAB);
+
+==========================================================
 Alerts
 
 frames
@@ -530,6 +544,7 @@ Actions
 JavaScriptExecutor
 
 svg elements
+
 Frameworks
 
 

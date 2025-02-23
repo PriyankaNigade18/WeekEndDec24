@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-02-22T11:50:27 IST" name="Default suite" finished-at="2025-02-22T11:50:34 IST" duration-ms="6433">
+  <suite started-at="2025-02-23T11:27:44 IST" name="Default suite" finished-at="2025-02-23T11:27:52 IST" duration-ms="8792">
     <groups>
     </groups>
-    <test started-at="2025-02-22T11:50:27 IST" name="Default test" finished-at="2025-02-22T11:50:34 IST" duration-ms="6433">
-      <class name="com.WebElementsHandling.AmazonDropdown_SelectBased">
-        <test-method signature="testDropDown()[pri:0, instance:com.WebElementsHandling.AmazonDropdown_SelectBased@3f6b0be5]" started-at="2025-02-22T11:50:27 IST" name="testDropDown" finished-at="2025-02-22T11:50:34 IST" duration-ms="6371" status="PASS">
+    <test started-at="2025-02-23T11:27:44 IST" name="Default test" finished-at="2025-02-23T11:27:52 IST" duration-ms="8792">
+      <class name="com.WebElementsHandling.NewWindow_Tab">
+        <test-method signature="testNewWindow_Tab()[pri:0, instance:com.WebElementsHandling.NewWindow_Tab@3b6ddd1d]" started-at="2025-02-23T11:27:44 IST" name="testNewWindow_Tab" finished-at="2025-02-23T11:27:52 IST" duration-ms="8737" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testDropDown -->
-      </class> <!-- com.WebElementsHandling.AmazonDropdown_SelectBased -->
+        </test-method> <!-- testNewWindow_Tab -->
+      </class> <!-- com.WebElementsHandling.NewWindow_Tab -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

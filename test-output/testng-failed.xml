@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.WebElementsHandling.AmazonDropdown_SelectBased">
+      <class name="com.WebElementsHandling.MultipleWindowHandling">
         <methods>
-          <include name="testDropDown"/>
+          <include name="testMultipleWindows"/>
         </methods>
-      </class> <!-- com.WebElementsHandling.AmazonDropdown_SelectBased -->
+      </class> <!-- com.WebElementsHandling.MultipleWindowHandling -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
