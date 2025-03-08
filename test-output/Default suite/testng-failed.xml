@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.WebElementsHandling.MultipleWindowHandling">
+      <class name="com.WebElementsHandling.FrameDemo1_UIVision">
         <methods>
-          <include name="testMultipleWindows"/>
+          <include name="testFrame"/>
         </methods>
-      </class> <!-- com.WebElementsHandling.MultipleWindowHandling -->
+      </class> <!-- com.WebElementsHandling.FrameDemo1_UIVision -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

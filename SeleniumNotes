@@ -533,22 +533,119 @@ slenium 4
 WebDriver driver=driver.switchTo().newWindow(WinDowType.TAB);
 
 ==========================================================
+8-03-2025
+===============
 Alerts
+==============
+Selenium provides Alert interface
 
+Alert alt=driver.switchTo().alert();
+
+Types
+======
+1.Basic alert: alert with Ok button
+2.Confirmation alert: alert with Ok and Cancel
+3.Prompt alert: send the data
+
+getText():to get the text of alert
+accept(): Ok
+dismiss():cancel
+sendKeys(): prompt
+
+=========================================
+How to automate Basic Authentication
+===================================
+
+https://username:password@the-internet.herokuapp.com/basic_auth
+
+=======================================================
 frames
+==============
+One HTML document embedded into another html document is called frame
 
+<frame>
+<iframe>
+
+Total frames on page
+---------------------------
+//tagname
+//iframe
+//frame
+
+Types
+======
+1.Basic
+2.Nested frame
+
+Automation
+===============
+1.frame with indexing
+driver.switchTo().frame(index)
+
+2.farme with id/name
+driver.switchTo().frame(id/name)
+
+3.frame with webelement
+driver.switchTo().frame(frameelement)
+
+
+To switch control to the main document
+---------------------------------
+Selects either the first frame on the page, 
+or the main document when a page containsiframes.
+
+driver.switchTo().defaultContent()
+
+To switch control to the parent frame
+----------------------------------------
+Change focus to the parent context
+
+driver.swicthTo().parentFrame()
+
+=======================================================
 WebTable
-
+=============
+1.Static table
+2.Dynamic table
+3.Pagination table
+=========================================================
 Actions
 
 JavaScriptExecutor
 
+special
+=================
 svg elements
 
+Broken links
+
+Shadow dom
+==========================
+Wait in selenium
+
+capabilities
+
+Headless testing
+
+file upload
+File download
+
+
 Frameworks
+======================
+1.TestNg
+2.Hybrid framework
+3.Cucumber
+
+API Testing
+
+Mobile app Testing
+
+DevOps Basic
 
 
-Actions class
+
+
 
 
 
