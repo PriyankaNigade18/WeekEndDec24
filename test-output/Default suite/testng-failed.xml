@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.WebElementsHandling.FrameDemo1_UIVision">
+      <class name="com.MouseOperatios.ResizeTest">
         <methods>
-          <include name="testFrame"/>
+          <include name="testResize"/>
         </methods>
-      </class> <!-- com.WebElementsHandling.FrameDemo1_UIVision -->
+      </class> <!-- com.MouseOperatios.ResizeTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -150,9 +150,55 @@ public class WebTableAutomation {
   
   
   
-  //@Test
+  @Test
   public void testPeginationTable() 
   {
+	  WebDriver driver=new ChromeDriver();
+	  driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+	  driver.get("https://testautomationpractice.blogspot.com/");
+	  
+	  
+	  List<WebElement> pages=driver.findElements(By.xpath("//ul[@id='pagination']//li//a"));
+	  System.out.println("Total pages are: "+pages.size());
+	  
+	  for(WebElement i:pages)
+	  {
+		  i.click();//open page
+		  System.out.println("Page Number: "+i.getText());
+		  //Number of Rows
+		  System.out.println("Number of rows: "+driver.findElements(By.xpath("//table[@id='productTable']//tr")).size());
+		  //Number of columns
+		  System.out.println("Number of columns are: "+driver.findElements(By.xpath("//table[@id='productTable']//tr[1]//th")).size());
+	  }
+	  
+	  
+	  System.out.println("**********************");
+	  //page number 3 -->check name=Fitness Tracker and click on checkbox
+	  
+	  for(WebElement i:pages)
+	  {
+		  if(i.getText().contains("3"))
+		  {
+			  i.click();
+			  
+			  List<WebElement> celldata=driver.findElements(By.xpath("//table[@id='productTable']//tbody//tr//td[2]"));
+			 int rcount=0;
+			  for(WebElement j:celldata)
+			  {
+				  rcount++;
+				  if(j.getText().contains("Fitness Tracker"))
+				  {
+					  System.out.println("Match found...at position: "+rcount);
+					  driver.findElement(By.xpath("//table[@id='productTable']//tbody//tr["+rcount+"]//td[4]//input")).click();
+					  break;
+				  }
+			  }
+		  }
+	  }
+	  
+	  
+	  
+	  
 	  
   }
 }

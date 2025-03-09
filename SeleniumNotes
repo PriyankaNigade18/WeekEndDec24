@@ -609,13 +609,34 @@ WebTable
 2.Dynamic table
 3.Pagination table
 =========================================================
-Actions
+JavaScriptExecutor Interface
+-----------------
+1.scroll
+2.title
+3.refresh
+4.click
+5.alert
 
-JavaScriptExecutor
+======================================================
+Actions class
+====================
+1.RightClick
+2.Double click
+3.Mouse Over
+4.Drang and Drop
+5.slider(Horizontal scroll)
 
+one action-->perform()
+Multiple actions --->build()+perform()
+==========================================================
 special
 =================
 svg elements
+------------------
+Screen vector Graph element
+-svg elememnt we can automate only using xpath
+-local-name() or name()
+
 
 Broken links
 

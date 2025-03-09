@@ -2,16 +2,16 @@
 <testng-results ignored="1" total="2" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-03-08T12:12:24 IST" name="Default suite" finished-at="2025-03-08T12:12:32 IST" duration-ms="8257">
+  <suite started-at="2025-03-09T11:44:57 IST" name="Default suite" finished-at="2025-03-09T11:45:07 IST" duration-ms="9032">
     <groups>
     </groups>
-    <test started-at="2025-03-08T12:12:24 IST" name="Default test" finished-at="2025-03-08T12:12:32 IST" duration-ms="8257">
-      <class name="com.WebElementsHandling.WebTableAutomation">
-        <test-method signature="testDynamicTable()[pri:0, instance:com.WebElementsHandling.WebTableAutomation@611889f4]" started-at="2025-03-08T12:12:24 IST" name="testDynamicTable" finished-at="2025-03-08T12:12:32 IST" duration-ms="8206" status="PASS">
+    <test started-at="2025-03-09T11:44:57 IST" name="Default test" finished-at="2025-03-09T11:45:07 IST" duration-ms="9032">
+      <class name="com.specialScenarios.SVGElementAutomation">
+        <test-method signature="testAutomationSVG()[pri:0, instance:com.specialScenarios.SVGElementAutomation@3f6b0be5]" started-at="2025-03-09T11:44:58 IST" name="testAutomationSVG" finished-at="2025-03-09T11:45:07 IST" duration-ms="8978" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testDynamicTable -->
-      </class> <!-- com.WebElementsHandling.WebTableAutomation -->
+        </test-method> <!-- testAutomationSVG -->
+      </class> <!-- com.specialScenarios.SVGElementAutomation -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
