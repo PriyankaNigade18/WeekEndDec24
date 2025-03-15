@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.MouseOperatios.ResizeTest">
+      <class name="com.WaitStrategyInSelenium.WaitStartegyUsingWebDriverWaitClass">
         <methods>
-          <include name="testResize"/>
+          <include name="testExplicitWait"/>
         </methods>
-      </class> <!-- com.MouseOperatios.ResizeTest -->
+      </class> <!-- com.WaitStrategyInSelenium.WaitStartegyUsingWebDriverWaitClass -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

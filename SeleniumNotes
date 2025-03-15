@@ -636,19 +636,73 @@ svg elements
 Screen vector Graph element
 -svg elememnt we can automate only using xpath
 -local-name() or name()
-
-
+===================================================
 Broken links
+============================
+<a href="link address">
+1.if link is with href attribute then only we can test it
+2.if href is empty/null we cant test such link
+3.href convert into URL request (URL class)
+4.then send this request to the server
+5.from the server get the status code
+6.compare status 400>= then only link is broken 
 
 Shadow dom
 ==========================
-Wait in selenium
+HTML DOM: document object model
+Shadow dom means DOM inside another DOM
+document--->shadow-host--->shadow-root(open)--->element
+xpath will not work in this scenario
+CssSelector will help to automate shadow Dom element
 
-capabilities
+when any tag contains #shadow-root then that tag we called host
+===================================================
+Wait in selenium
+=========================
+Default wait timeout
+===============
+1.Implicit wait=0
+2.PageLoadTimeOut= 3Lms ==>300sec===>5mins
+3.ScriptTimeOut= 30sec
+
+
+Synchronization Issue in Selenium
+======================================
+Time mapping problem in between application and tool is called Synchronization issue
+
+Selenium Provides Dynamic Wait to handle this issue
+------------------------------------------
+1.Implicit Wait
+-================
+- It global wait 
+- applicable to complete script/element
+- add wait after initilization of driver
+
+driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+
+------------------------------------------------------
+2.Explicit Wait
+========================
+- It is applicable for single WebElement
+- It is based on certain condition we are able to apply wait
+
+1.WebDriverWait class
+2.FluentWait class
+
+WebDriverWait(c) extends FluentWait(c) implements Wait(I)
+===========================================================
+
+Capabilities
+===================
+Capabilities will help to customize current browser session
+
+chrome==>ChromeOptions class
+edge===>EdgeOptions class
+firefox===>FirefoxOptions class
 
 Headless testing
 
-file upload
+File upload
 File download
 
 
