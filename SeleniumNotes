@@ -695,22 +695,106 @@ WebDriverWait(c) extends FluentWait(c) implements Wait(I)
 Capabilities
 ===================
 Capabilities will help to customize current browser session
+Capabilities are options that you can use to customize 
+and configure a ChromeDriver session. 
 
 chrome==>ChromeOptions class
 edge===>EdgeOptions class
 firefox===>FirefoxOptions class
 
 Headless testing
+===================
+Selenium 3
+HtmlUnitDriver-ghostDriver
+Selenium 4-ChromeOptions class
+--headless
+
 
 File upload
-File download
+===================
+import java.awt.datatransfer.StringSelection;
+import java.awt.Toolkit;
+import java.awt.event.KeyEvent;
+import java.time.Duration;
+import java.awt.AWTException;
+import java.awt.Robot;
 
+//clipboard step ctrl+c
+StringSelection sc=new StringSelection("file path");
+Toolkit.getDefaultToolkit().getSystemClipboard().setContents(sc,null);
+
+//ctrl+V
+ //keypress
+	keyPress(KeyEvent.VK_CONTROL);
+	keyPress(KeyEvent.VK_V);
+	  
+//key release
+	keyRelease(KeyEvent.VK_CONTROL);
+	keyRelease(KeyEvent.VK_V); 
+File download
+=====================================================
 
 Frameworks
 ======================
 1.TestNg
-2.Hybrid framework
+=================
+TestNG arguments
+--------------------
+priority
+description
+timeouts
+invocationCount
+done
+---remaining-----
+dependesOnMethods
+dependsOnGroups
+
+Assertion in TestNG
+-------------------
+1.Hard Assertion
+2.Soft Assertion
+done
+
+How to disable any test from current execution
+--------------------------------
+1.enabled=false
+2.Using testng.xml file-done
+
+How to run fail test case in testng
+-----------------------------------
+
+in output folder
+testng-failed.xml
+done
+
+what is testng.xml
+------------------
+This is configuration file for project/testcase/suite
+-Annotations
+-Parallel testing
+-test Suite
+
+Data Passing
+---------------------
+-pass parameters using xml
+-using properties file
+
+
+Data driven framework
+--------------------------
+1.Using array
+2.Using Excel- ApachePOI
+
+Page Object Model design pattern
+-----------------------------
+1.By locator
+2.PageFactory class
+
+Hybrid framework design
+------------------------
+
 3.Cucumber
+====================
 
 API Testing
 

@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.WaitStrategyInSelenium.WaitStartegyUsingWebDriverWaitClass">
+      <class name="com.TestNG.BasicScenarios.TestDemo5_Assertion">
         <methods>
-          <include name="testExplicitWait"/>
+          <include name="testSoftAssertion"/>
         </methods>
-      </class> <!-- com.WaitStrategyInSelenium.WaitStartegyUsingWebDriverWaitClass -->
+      </class> <!-- com.TestNG.BasicScenarios.TestDemo5_Assertion -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
