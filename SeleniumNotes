@@ -745,9 +745,7 @@ description
 timeouts
 invocationCount
 done
----remaining-----
-dependesOnMethods
-dependsOnGroups
+
 
 Assertion in TestNG
 -------------------
@@ -767,12 +765,50 @@ in output folder
 testng-failed.xml
 done
 
+22-03-2025
+=================
+dependesOnMethods
+groups
+dependsOnGroups
+
 what is testng.xml
 ------------------
 This is configuration file for project/testcase/suite
 -Annotations
 -Parallel testing
 -test Suite
+-include/exclude methods and groups
+-parameter passing
+
+
+Annotations(Rules)
+=====================
+Pre-requisite(preconditions)
+--------------------
+suite: collection of test
+test: collection of classes
+Class: collection of methods @Test
+@BeforeSuite
+@BeforeTest
+@BeforeClass
+@BeforeMethod
+
+Postcondition
+--------------------
+@AfterSuite
+@AfterTest
+@AfterClass
+@AfterMethod
+
+22-03-2025
+----------------
+Page Object Model design pattern
+-----------------------------
+1.By locator
+2.PageFactory class
+
+Hybrid framework design
+------------------------
 
 Data Passing
 ---------------------
@@ -785,13 +821,9 @@ Data driven framework
 1.Using array
 2.Using Excel- ApachePOI
 
-Page Object Model design pattern
------------------------------
-1.By locator
-2.PageFactory class
+Reports
 
-Hybrid framework design
-------------------------
+Screentshot
 
 3.Cucumber
 ====================
