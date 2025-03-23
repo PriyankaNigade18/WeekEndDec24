@@ -800,11 +800,21 @@ Postcondition
 @AfterClass
 @AfterMethod
 
-22-03-2025
+23-03-2025
 ----------------
+What is Object Repository
+-------------------------------
+It is storage to store properties of object
+Selenium doesn't have OR
+We can implement OR in Selenium
+----------------
+1.Using PageObject
+2.Using properties file
+
+
 Page Object Model design pattern
 -----------------------------
-1.By locator
+1.By locator(Without PageFactory)
 2.PageFactory class
 
 Hybrid framework design
@@ -821,7 +831,15 @@ Data driven framework
 1.Using array
 2.Using Excel- ApachePOI
 
+Parallel testing
+==============
+
 Reports
+=============
+ExtentReport
+Alluer report
+ChainReport
+
 
 Screentshot
 
