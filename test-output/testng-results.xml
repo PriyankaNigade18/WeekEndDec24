@@ -1,25 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="1" total="2" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-03-23T10:47:22 IST" name="Default suite" finished-at="2025-03-23T10:47:31 IST" duration-ms="8453">
+  <suite started-at="2025-03-29T11:59:58 IST" name="Default suite" finished-at="2025-03-29T11:59:59 IST" duration-ms="818">
     <groups>
     </groups>
-    <test started-at="2025-03-23T10:47:22 IST" name="Default test" finished-at="2025-03-23T10:47:31 IST" duration-ms="8453">
-      <class name="com.TestNG.PageObjectModelUsingPageFactory.HrmLoginPageTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.TestNG.PageObjectModelUsingPageFactory.HrmLoginPageTest@53ce1329]" started-at="2025-03-23T10:47:22 IST" name="setUp" finished-at="2025-03-23T10:47:29 IST" duration-ms="6225" status="PASS">
+    <test started-at="2025-03-29T11:59:58 IST" name="Default test" finished-at="2025-03-29T11:59:59 IST" duration-ms="818">
+      <class name="com.TestNG.DataDrivenFramework.TestExcelUtility">
+        <test-method signature="testStringData()[pri:0, instance:com.TestNG.DataDrivenFramework.TestExcelUtility@f5acb9d]" started-at="2025-03-29T11:59:58 IST" name="testStringData" finished-at="2025-03-29T11:59:59 IST" duration-ms="763" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="validateUrl()[pri:1, instance:com.TestNG.PageObjectModelUsingPageFactory.HrmLoginPageTest@53ce1329]" started-at="2025-03-23T10:47:29 IST" name="validateUrl" finished-at="2025-03-23T10:47:29 IST" duration-ms="21" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validateUrl -->
-        <test-method signature="validateLogin()[pri:2, instance:com.TestNG.PageObjectModelUsingPageFactory.HrmLoginPageTest@53ce1329]" started-at="2025-03-23T10:47:29 IST" name="validateLogin" finished-at="2025-03-23T10:47:31 IST" duration-ms="2155" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validateLogin -->
-      </class> <!-- com.TestNG.PageObjectModelUsingPageFactory.HrmLoginPageTest -->
+        </test-method> <!-- testStringData -->
+      </class> <!-- com.TestNG.DataDrivenFramework.TestExcelUtility -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

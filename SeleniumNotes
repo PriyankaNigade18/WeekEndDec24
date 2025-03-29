@@ -820,10 +820,41 @@ Page Object Model design pattern
 Hybrid framework design
 ------------------------
 
+29-03-2025
+=================
 Data Passing
 ---------------------
--pass parameters using xml
+-pass parameters using xml file
+-------------------
+1.create test case
+2.set the data from xml file 
+<parameter name="var" value=""/>
+3.in test case add @Parameters({"var"})
+4.run xml file to check the result
+
 -using properties file
+
+===================================
+
+Parallel testing
+==============
+1.Method level
+2.class level
+3.Test level
+
+Excel File
+================
+Read data from excel file-ApachePOI java APi required
+
+Classes
+----------------
+1.XSSFWorkbook
+2.XSSFSheet
+3.XSSFRow
+4.XSSFCell
+
+
+getCellStringValue()
 
 
 Data driven framework
@@ -831,8 +862,7 @@ Data driven framework
 1.Using array
 2.Using Excel- ApachePOI
 
-Parallel testing
-==============
+
 
 Reports
 =============
