@@ -20,7 +20,7 @@ public class T1_LoginTest extends BaseClass
   @Test(priority=2)
   public void validateLogin() 
   {
-	  lp.doLogin("standard_user","secret_sauce");
+	  lp.doLogin(prop.getData("un"),prop.getData("psw"));
 	  AssertJUnit.assertTrue(lp.getAppUrl().contains("inventory"));
 	  System.out.println("Login successfull!");
   }
