@@ -4,9 +4,7 @@
   <test thread-count="5" name="Test">
    <parameter name="bname" value="chrome"></parameter>
     <classes>
-       <class name="com.SwagLab.TestCases.T1_LoginTest"/>
-      <class name="com.SwagLab.TestCases.T2_InventoryTest"/>
-      <class name="com.SwagLab.TestCases.T3_CartTest"/>
+        <class name="com.SwagLab.TestCases.T3_CartTest"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

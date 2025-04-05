@@ -18,6 +18,7 @@ public class BaseClass
 	public P1_LoginPage lp;
 	public P2_Inventory ip;
 	public PropertiesUtil prop;
+	public P3_CartPage cp;
 	
 	@BeforeClass
 	@Parameters({"bname"})
@@ -36,6 +37,7 @@ public class BaseClass
 		driver.get(prop.getData("url"));
 		lp=new P1_LoginPage(driver);
 		ip=new P2_Inventory(driver);
+		cp=new P3_CartPage(driver);
 	}
 	
 	
@@ -45,4 +47,15 @@ public class BaseClass
 		driver.quit();
 	}
 
+	
+	public void addWait()
+	{
+		try {
+			Thread.sleep(2000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+	}
 }

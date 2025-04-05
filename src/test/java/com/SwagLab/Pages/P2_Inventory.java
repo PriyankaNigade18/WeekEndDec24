@@ -61,4 +61,9 @@ public class P2_Inventory
 		System.out.println("Product added to cart: "+pname);
 	}
 
+	public P3_CartPage launchCartPage()
+	{
+		cartOption.click();
+		return new P3_CartPage(driver);
+	}
 }
