@@ -5,7 +5,7 @@
   <parameter name="un" value="Admin"></parameter>
   <parameter name="psw" value="admin123"></parameter>
     <classes>
-      <class name="com.TestNG.DataPassing.HrmDataPassingUsingXmlFile"/>
+      <class name="com.TestNG.DataPassingUp.copy.HrmDataPassingUsingXmlFile"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

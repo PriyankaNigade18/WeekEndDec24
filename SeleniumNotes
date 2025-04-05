@@ -853,16 +853,32 @@ Classes
 3.XSSFRow
 4.XSSFCell
 
-
 getCellStringValue()
 
-
+==============================================
 Data driven framework
 --------------------------
+Executing same set of action with multiple set of data, multiple time its called
+data driven testing.
+
+Data driven framework in testng we can achieve using @DataProvider
+
 1.Using array
 2.Using Excel- ApachePOI
 
 
+Screentshot
+=============
+Basic Screenshot -TakesScreesnshot
+Full Page Screenshot- aShot external API
+
+
+Framework Design
+
+Framework Execution(Devops)
+
+
+listener
 
 Reports
 =============
@@ -871,7 +887,6 @@ Alluer report
 ChainReport
 
 
-Screentshot
 
 3.Cucumber
 ====================

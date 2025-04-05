@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.TestNG.DataDrivenFramework.TestExcelUtility">
+      <class name="com.TestNG.Screenshot.TestScreenshot">
         <methods>
-          <include name="testStringData"/>
+          <include name="testScreenshot"/>
         </methods>
-      </class> <!-- com.TestNG.DataDrivenFramework.TestExcelUtility -->
+      </class> <!-- com.TestNG.Screenshot.TestScreenshot -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
