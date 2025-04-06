@@ -876,6 +876,49 @@ Full Page Screenshot- aShot external API
 Framework Design
 
 Framework Execution(Devops)
+======================
+Maven is Build and project management tool
+------------------
+To Execute project
+-----------------
+1. using testng.xml file
+
+2.Using maven
+---------------------
+Goal
+===========
+1.clean: delete files from target 
+2.test: test the project
+3.install: install+test
+
+1.using pom.xml file
+
+1.Add plugins
+----------
+1.compiler plugin
+https://maven.apache.org/plugins/maven-compiler-plugin/examples/compile-using-different-jdk.html
+2.Surefire plugin
+https://maven.apache.org/surefire/maven-surefire-plugin/examples/testng.html
+
+	
+download maven on local machine
+----------------------------------
+https://maven.apache.org/download.cgi
+
+2.using CLI
+---------------------------------
+	
+DevOps Basic
+	
+3.Using Jenkins
+
+
+
+
+
+
+
+
 
 
 listener
@@ -895,7 +938,7 @@ API Testing
 
 Mobile app Testing
 
-DevOps Basic
+
 
 
 
