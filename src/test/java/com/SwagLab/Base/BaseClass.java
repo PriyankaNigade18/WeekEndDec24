@@ -19,6 +19,8 @@ public class BaseClass
 	public P2_Inventory ip;
 	public PropertiesUtil prop;
 	public P3_CartPage cp;
+	public P4_Checkout ch;
+	public P5_Overview op;
 	
 	@BeforeClass
 	@Parameters({"bname"})
@@ -38,6 +40,8 @@ public class BaseClass
 		lp=new P1_LoginPage(driver);
 		ip=new P2_Inventory(driver);
 		cp=new P3_CartPage(driver);
+		ch=new P4_Checkout(driver);
+		op=new P5_Overview(driver);
 	}
 	
 	
