@@ -1,0 +1,36 @@
+Hybrid framework
+--------------------
+1.testng.xml
+2.maven
+	1.using pom.xml
+	2.using CLI
+3.using Jenkins
+
+Jenkins(CICD)
+-------------------
+Integrate Eclipse(Maven)--->Jenkins
+Integrate Eclipse(Maven)----->Github--->Jenkins
+
+
+Jenkins Job
+----------------
+Freestyle job
+Maven
+pipeline
+
+How to trigger the build
+--------------------------
+
+Build chaining(Build--->Test---->Deploy)
+
+Jenkins pipeline
+-------------------
+1.Declarative (show)
+2.scripting
+
+using plugin delivery pipeline
+
+
+
+
+
