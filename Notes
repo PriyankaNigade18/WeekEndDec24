@@ -20,8 +20,20 @@ pipeline
 
 How to trigger the build
 --------------------------
+1.Trigger builds remotely (e.g., from scripts)
+
+2.Build after other projects are built
+
+3.Build periodically
+
+4.GitHub hook trigger for GITScm polling
+
+5.Poll SCM
+
+===================================
 
 Build chaining(Build--->Test---->Deploy)
+
 
 Jenkins pipeline
 -------------------
